@@ -15,7 +15,6 @@ app.use(function (req, res, next) {
 });
 var port = process.env.PORT || 2410;
 app.listen(port, () => console.log(`Node app listening on port ${port}!`));
-
 let {getConnection} = require("./mobileDB.js");
 
 app.get("/svr/mobiles",function (req,res){
